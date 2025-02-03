@@ -76,6 +76,6 @@ fs.writeFile("dosyacikti.txt", dosyaIcerik, (err) => {
     if (err) {
         console.error("Dosyaya yazma hatası:", err);
     } else {
-        console.log("Bilgiler 'ogrenci_notlari.txt' dosyasına başarıyla kaydedildi!");
+        console.log("Bilgiler 'dosyacikti.txt' dosyasına başarıyla kaydedildi!");
     }
 });
