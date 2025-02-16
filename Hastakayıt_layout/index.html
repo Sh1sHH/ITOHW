@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasta Yönetim Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title">Hasta Yönetim Sistemi</h1>
+        </div>
+    </header>
+
+    <nav class="subheader">
+        <div class="navbar">
+            <a href="index.html" class="nav-link active">Hasta Kayıt</a>
+            <a href="hasta-listesi.html" class="nav-link">Hasta Listesi</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="index.html" class="sidebar-link active">Hasta Kayıt</a>
+                <a href="hasta-listesi.html" class="sidebar-link">Hasta Listesi</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h2 class="form-title">Hasta Kayıt Formu</h2>
+            <form id="patientForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Ad</label>
+                        <input type="text" class="form-input" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Soyad</label>
+                        <input type="text" class="form-input" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Doğum Tarihi</label>
+                        <input type="date" class="form-input" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Cinsiyet</label>
+                        <select class="form-input" id="gender" name="gender" required>
+                            <option value="">Seçiniz</option>
+                            <option value="male">Erkek</option>
+                            <option value="female">Kadın</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Telefon</label>
+                        <input type="tel" class="form-input" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">E-posta</label>
+                        <input type="email" class="form-input" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group full">
+                        <label class="form-label">Adres</label>
+                        <textarea class="form-input" id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Kan Grubu</label>
+                        <select class="form-input" id="bloodType" name="bloodType" required>
+                            <option value="">Seçiniz</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="0+">0+</option>
+                            <option value="0-">0-</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Alerjiler</label>
+                        <input type="text" class="form-input" id="allergies" name="allergies">
+                    </div>
+
+                    <div class="form-group full">
+                        <label class="form-label">Tıbbi Geçmiş</label>
+                        <textarea class="form-input" id="medicalHistory" name="medicalHistory" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group full">
+                        <button type="submit" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Footer </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
